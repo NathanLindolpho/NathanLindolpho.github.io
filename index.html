@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Seu Amigo Feliz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F2F2F2;
+            color: #0D0D0D;
+        }
+        .header {
+            background-color: #0D0D0D;
+            color: #F2F2F2;
+            padding: 10px 0;
+        }
+        .header a {
+            color: #F2F2F2;
+            text-decoration: none;
+        }
+        .intro, .highlight, .services, .about, .contact, .footer {
+            padding: 50px 0;
+        }
+        .intro {
+            background-color: #EDC989;
+        }
+        .highlight, .services, .contact {
+            background-color: #F2F2F2;
+        }
+        .about {
+            background-color: #EDC989;
+        }
+        .footer {
+            background-color: #0D0D0D;
+        }
+        .btn-primary {
+            background-color: #59321C;
+            border-color: #59321C;
+        }
+        .btn-primary:hover {
+            background-color: #402510;
+            border-color: #402510;
+        }
+        .highlight-item img, .about-image img {
+            border-radius: 10px;
+        }
+        .highlight-item, .service-item {
+            background-color: #F2F2F2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav  {
+            color: #EDC989;
+            text-decoration: none;
+            font-weight: bold; /* Links em negrito */
+            padding: 8px 16px; /* Adiciona padding aos links */
+            border-radius: 5px; /* Borda arredondada aos links */
+            transition: background-color 0.2s; /* Transição para efeito hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="logo d-flex align-items-center">
+                    <img src="logo.png" alt="Logo PetShop" class="mr-2">
+                    <h1 class="m-0">PetShop</h1>
+                </a>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="paginacontato.html" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro text-center text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Bem-vindo ao <span>Paraíso</span> do seu <span>Melhor Amigo!</span></h2>
+                    <p>Oferecemos os melhores produtos e serviços para seu pet, com todo amor e carinho que ele merece.</p>
+                    <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/cachorro.png (2).jfif" alt="Imagem de um cachorro feliz" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destaque" class="highlight">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="highlight-item">
+                        <img src="img/cachorro.png.jfif" alt="Destaque 1" class="img-fluid mb-3">
+                        <h3>Banho e tosa</h3>
+                        <p>Caso esteja interresado clique aqui:</p>
+                        <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="highlight-item">
+                        <img src="img/veterinaria.png" alt="Destaque 2" class="img-fluid mb-3">
+                        <h3>Vacinas</h3>
+                    
+                        <p>Caso esteja interresado clique aqui:</p>
+                        <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="highlight-item">
+                        <img src="img/cxr.png" alt="Destaque 3" class="img-fluid mb-3">
+                        <h3>Adestramento</h3>
+                        <p>Caso esteja interresado clique aqui:</p>
+                        <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="highlight-item">
+                        <img src="img/vacina.png" alt="Destaque 4" class="img-fluid mb-3">
+                        <h3>Veterinárias</h3>
+                        <p>Caso esteja interresado clique aqui:</p>
+                        <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servico" class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossos Serviços</h2>
+            <div class="row">
+                
+                <div class="col-md-3 text-center">
+                    <div class="service-item">
+                        <i class="fas fa-cut fa-3x mb-3"></i>
+                        <h3>Banho e Tosa</h3>
+                        <p>Oferecemos serviços de banho e tosa para deixar seu pet sempre limpo e bonito.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="service-item">
+                        <i class="fas fa-stethoscope fa-3x mb-3"></i>
+                        <h3>Consultas Veterinárias</h3>
+                        <p>Consultas com veterinários qualificados para cuidar da saúde do seu pet.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="service-item">
+                        <i class="fas fa-paw fa-3x mb-3"></i>
+                        <h3>Adestramento</h3>
+                        <p>Adestramento profissional para melhorar o comportamento do seu pet.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="service-item">
+                        <i class="fas fa-syringe fa-3x mb-3"></i>
+                        <h3>Vacinação</h3>
+                        <p>Serviço de vacinação para proteger seu pet de diversas doenças.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/equipec.png" alt="Imagem da equipe do PetShop" class="img-fluid about-image">
+                </div>
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ullamcorper ultricies, nunc nisl semper ipsum, a iaculis nunc ex et libero. Duis vitae lorem ac justo lacinia finibus.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-paw fa-2x mr-3"></i>
+                            <div>
+                                <h3>Atendimento especializado</h3>
+                                <p>Contamos com uma equipe de profissionais qualificados para atender o seu pet com todo cuidado e atenção.</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-bone fa-2x mr-3"></i>
+                            <div>
+                                <h3>Produtos de qualidade</h3>
+                                <p>Oferecemos uma ampla variedade de produtos de alta qualidade para garantir a saúde e o bem-estar do seu animalzinho.</p>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-heart fa-2x mr-3"></i>
+                            <div>
+                                <h3>Amor pelos animais</h3>
+                                <p>Somos apaixonados por animais e estamos comprometidos em oferecer o melhor atendimento para cada um deles.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-white text-center">
+        <div class="container">
+            <p>© 2024 PetShop. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

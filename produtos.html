@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - [Nome do seu Pet Shop]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F2F2F2;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #0D0D0D;
+            color: #EDC989;
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #EDC989;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            color: #59321C;
+            background-color: #EDC989;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 20px;
+            text-align: center;
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            color: #59321C;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .product p {
+            color: #59321C;
+            font-size: 1em;
+        }
+
+        .product .price {
+            font-weight: bold;
+            color: #59321C;
+            font-size: 1.2rem;
+        }
+
+        .btn-primary {
+            background-color: #59321C;
+            border-color: #59321C;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #EDC989;
+            border-color: #EDC989;
+        }
+
+        footer {
+            background-color: #0D0D0D;
+            color: #EDC989;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer {
+            background-color: #0D0D0D;
+            color: #F2F2F2;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .intro-image {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .map-container {
+            margin-bottom: 50px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo d-flex align-items-center">
+                <img src="logo.png" alt="Logo PetShop" class="mr-2">
+                <h1 class="m-0">PetShop</h1>
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="paginacontato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <h2 class="text-center mb-4">Nossos Produtos</h2>
+        <div class="product-container">
+
+            <!-- Exemplo de um produto -->
+            <div class="product">
+                <img src="img/racao.png" alt="Ração para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Ração para cães</h3>
+                    <p class="card-text">Ração premium para cães adultos de todas as raças.</p>
+                    <p class="card-text price">R$ 50,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Mais 10 produtos -->
+            <div class="product">
+                <img src="img/brinquedos.png" alt="Brinquedo para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Brinquedo para cães</h3>
+                    <p class="card-text">Brinquedo de corda resistente para cães de todas as idades.</p>
+                    <p class="card-text price">R$ 15,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/coleira.ong.jfif" alt="Coleira para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Coleira para cães</h3>
+                    <p class="card-text">Coleira de nylon ajustável com fecho de segurança.</p>
+                    <p class="card-text price">R$ 25,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/guloseima.png" alt="Guloseimas para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Guloseimas para cães</h3>
+                    <p class="card-text">Guloseimas saudáveis e saborosas para cães.</p>
+                    <p class="card-text price">R$ 10,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/gato.png" alt="Ração para gatos" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Ração para gatos</h3>
+                    <p class="card-text">Ração premium para gatos adultos de todas as raças.</p>
+                    <p class="card-text price">R$ 40,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/areia.png" alt="Areia higiênica para gatos" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Areia higiênica para gatos</h3>
+                    <p class="card-text">Areia higiênica aglomerante com controle de odor.</p>
+                    <p class="card-text price">R$ 20,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/caixa.png" alt="Caixa de transporte para gatos" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Caixa de transporte para gatos</h3>
+                    <p class="card-text">Caixa de transporte segura e confortável para gatos.</p>
+                    <p class="card-text price">R$ 50,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/camiseta.png" alt="Camiseta para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Camiseta para cães</h3>
+                    <p class="card-text">Camiseta de algodão confortável para cães.</p>
+                    <p class="card-text price">R$ 20,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/shampoo.png" alt="Shampoo para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Shampoo para cães</h3>
+                    <p class="card-text">Shampoo hipoalergênico para cães.</p>
+                    <p class="card-text price">R$ 15,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/bebedouro.jpg" alt="Comedouro e bebedouro para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Comedouro e bebedouro para cães</h3>
+                    <p class="card-text">Conjunto de comedouro e bebedouro de cerâmica.</p>
+                    <p class="card-text price">R$ 30,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/bebedouro.jpg" alt="Comedouro e bebedouro para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Comedouro e bebedouro para cães</h3>
+                    <p class="card-text">Conjunto de comedouro e bebedouro de cerâmica.</p>
+                    <p class="card-text price">R$ 30,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/bebedouro.jpg" alt="Comedouro e bebedouro para cães" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Comedouro e bebedouro para cães</h3>
+                    <p class="card-text">Conjunto de comedouro e bebedouro de cerâmica.</p>
+                    <p class="card-text price">R$ 30,00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>PetShop</h5>
+                    <p>Oferecendo os melhores serviços e produtos para o seu pet com amor e carinho.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light">Home</a></li>
+                        <li><a href="#sobre" class="text-light">Sobre</a></li>
+                        <li><a href="#servico" class="text-light">Serviços</a></li>
+                        <li><a href="#contato" class="text-light">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@petshop.com</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p>© 2023 PetShop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
