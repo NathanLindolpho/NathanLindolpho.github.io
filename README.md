@@ -37,6 +37,7 @@ Ferramentas:
 GitHub.
 XAMPP.
 Visual Studio Code.
+
 Observação:
 
 Este projeto está em desenvolvimento e novas funcionalidades serão implementadas em breve.
